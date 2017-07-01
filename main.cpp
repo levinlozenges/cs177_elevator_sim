@@ -1,9 +1,7 @@
 //
 // Adam Chao
 // Jeffrey Ng
-// 861102976
-// 861094630
-// CS 177 Project Phase 1
+// CS 177 Elevator Project
 //
 
 #include <iostream>
