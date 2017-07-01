@@ -1,3 +1,4 @@
+## Description
 Simulation made to model a set of elevators servicing passengers between the lobby and the upper floors of a building. Collaborated with fellow student Adam Chao(@thinkaliker) for this project. Made using the CSIM library package in C++.
 
 The program operates through a central control process that wakes up elevators when passengers arrive at an elevator and press appropriate UP or DOWN buttons to call an elevator.
@@ -11,6 +12,9 @@ After the elevator services its passengers, it will signal the control that it h
 Passengers are generated using an exponential distribution in groups of 1-5.
 If 5 seconds have passed and there are no requests to call an elevator, the control will signal the available elevators to realign themselves at n/NUM_floors intervals between floors. This is done to better service passengers in order to cut the time it takes to travel to the passenger first before carrying them to their intended destination.
 
+## Instructions
+Compile using "make". Note that CSIM library packages are required and will need to be directed towards the main.cpp file in order for it to compile.
+
 Change the value of identifier NUM_floors to set the amount of floors to be used in the simulation.
 
 Change the value of identifier NUM_elevators to set the amount of elevators to be used in the simulation.
@@ -19,4 +23,6 @@ Change the value of identifier NUM_space to set the capacity of an elevator.
 
 CSIM will create and output a log file at the end of the simulation; specific logs for each stage of the boarding process will be output before then.
 
+## Bugs
 The program is not fool-proof, and tends to break when the floors are set to values higher than 20.
+The elevators rarely take on ghost passengers or duplicates, which cause the program to preemptively quit since said ghost passenger will not get off the elevator due to a lack of a corporeal form.
