@@ -37,4 +37,5 @@ CSIM will create and output a log file at the end of the simulation; specific lo
 Bugs
 -----
 The program is not fool-proof, and tends to break when the floors are set to values higher than 20.
+
 The elevators rarely take on ghost passengers or duplicates, which cause the program to preemptively quit since said ghost passenger will not get off the elevator due to a lack of a corporeal form.
