@@ -1,1 +1,9 @@
 Simulation made to model a set of elevators servicing passengers between the lobby and the upper floors of a building. Collaborated with fellow student Adam Chao(@thinkaliker) for this project. Made using the CSIM library package in C++.
+
+Change the value of identifier NUM_floors to set the amount of floors to be used in the simulation.
+
+Change the value of identifier NUM_elevators to set the amount of elevators to be used in the simulation.
+
+CSIM will create and output a log file at the end of the simulation; specific logs for each stage of the boarding process will be output before then.
+
+The program is not fool-proof, and tends to break when the floors are set to values higher than 20.
